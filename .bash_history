@@ -1,6 +1,3 @@
-wofi --show drun
-wofi --show drun | fzf
-ls /usr/share/applications/ | fzf
 doas mv .local/share/applications/firefox.desktop /usr/share/applications/
 ls /usr/share/applications/ | fzf
 vim /usr/share/applications/firefox.desktop 
@@ -498,3 +495,6 @@ home-manager switch --flake .#ns
 fish
 fish
 fish
+doas emptty
+emptty
+doas emptty

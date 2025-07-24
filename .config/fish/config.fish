@@ -18,6 +18,6 @@ status is-interactive; and begin
 
     set -U fish_greeting
     fzf --fish | source
-
+    zoxide init fish | source
 
 end
