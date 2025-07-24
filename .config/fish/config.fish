@@ -5,6 +5,8 @@ status is-login; and begin
 end
 
 status is-interactive; and begin
+    set -gx QT_QPA_PLATFORM wayland 
+    set -gx TERM ghostty
 
     # Abbreviations
     abbr --add --position anywhere -- -C --color
@@ -19,5 +21,6 @@ status is-interactive; and begin
     set -U fish_greeting
     fzf --fish | source
     zoxide init fish | source
+
 
 end
