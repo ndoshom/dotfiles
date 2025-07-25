@@ -1,12 +1,8 @@
-status is-login; and begin
-
-    # Login shell initialisation
-
-end
-
 status is-interactive; and begin
-    set -gx QT_QPA_PLATFORM wayland 
+  
     set -gx TERM ghostty
+    set -gx HYPRSHOT_DIR ~/Screenshots
+    set -gx EDITOR nvim
 
     # Abbreviations
     abbr --add --position anywhere -- -C --color
@@ -15,6 +11,7 @@ status is-interactive; and begin
     abbr --add off 'doas poweroff'
 
     # Aliases
+    alias y="yazi"
 
     # Interactive shell initialisation
 

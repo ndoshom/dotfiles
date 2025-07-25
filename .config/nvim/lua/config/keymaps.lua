@@ -1,4 +1,3 @@
-
 -- jk to exit Insert Mode
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
 
@@ -7,3 +6,4 @@ vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>i', { noremap = true })
 
 -- Save with doas
 vim.keymap.set('n', '<Leader>ds', ':w !sudo tee % > /dev/null<CR>', { noremap = true })
+

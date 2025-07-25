@@ -23,3 +23,5 @@ vim.opt.hidden = true
 -- Allow reload files
 vim.opt.autoread = true
 
+-- Colorscheme
+vim.o.background = "dark" -- or "light" for light mode
