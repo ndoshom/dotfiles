@@ -1,8 +1,13 @@
-status is-interactive; and begin
+if status is-login
+    set -gx PYTHON_HISTORY "/home/ns/.local/state/python/history"
+    set -gx FZF_DEFAULTS "--layout=reverse --border=bold --border=rounded --margin=3% --color=dark"
+end
   
+if status is-interactive
     set -gx TERM ghostty
     set -gx HYPRSHOT_DIR ~/Screenshots
     set -gx EDITOR nvim
+    set -gx PATH $PATH /usr/local/bin ~/bin ~/.local/state/nix/profile/bin ~/.local/state/cargo/bin
 
     # Abbreviations
     abbr --add --position anywhere -- -C --color
@@ -19,5 +24,8 @@ status is-interactive; and begin
     fzf --fish | source
     zoxide init fish | source
 
-
+  if test -e /nix/var/nix/profiles/default/etc/profile.d/nix.fish
+    source /nix/var/nix/profiles/default/etc/profile.d/nix.fish
+  end
 end
+
