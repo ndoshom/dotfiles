@@ -7,7 +7,7 @@ if status is-interactive
     set -gx TERM ghostty
     set -gx HYPRSHOT_DIR ~/Screenshots
     set -gx EDITOR nvim
-    set -gx PATH $PATH /usr/local/bin ~/bin ~/.local/state/nix/profile/bin ~/.local/state/cargo/bin
+    set -gx PATH $PATH /usr/local/bin ~/bin ~/.local/state/nix/profile/bin ~/.local/state/cargo/bin /home/ns/linuxbrew/.linuxbrew/bin
     set -gx BROWSER ~/.local/state/nix/profile/bin/brave
 
     # Abbreviations
@@ -15,6 +15,7 @@ if status is-interactive
     abbr --add -- gco 'git checkout'
     abbr --add -- l less
     abbr --add off 'doas poweroff'
+    abbr --add addservice '~/.local/bin/addservice.sh'
 
     # Aliases
     alias y="yazi"
@@ -30,3 +31,5 @@ if status is-interactive
   end
 end
 
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
