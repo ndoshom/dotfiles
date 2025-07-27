@@ -1,3 +1,7 @@
+-- Set the leader
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- jk to exit Insert Mode
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
 
@@ -5,5 +9,5 @@ vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
 vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>i', { noremap = true })
 
 -- Save with doas
-vim.keymap.set('n', '<Leader>ds', ':w !sudo tee % > /dev/null<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>ds', ':w !sudo tee % > /dev/null<CR>', { noremap = true, silent = true })
 

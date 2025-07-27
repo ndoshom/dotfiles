@@ -8,6 +8,7 @@ if status is-interactive
     set -gx HYPRSHOT_DIR ~/Screenshots
     set -gx EDITOR nvim
     set -gx PATH $PATH /usr/local/bin ~/bin ~/.local/state/nix/profile/bin ~/.local/state/cargo/bin
+    set -gx BROWSER ~/.local/state/nix/profile/bin/brave
 
     # Abbreviations
     abbr --add --position anywhere -- -C --color
