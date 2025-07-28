@@ -1,4 +1,4 @@
-command = /home/ns/.local/state/nix/profile/bin/starttmux
+command = /home/ns/.local/bin/starttmux.sh
 theme = catppuccin-mocha
 font-size = 19
 background-blur-radius = 20
