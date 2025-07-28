@@ -23,13 +23,11 @@ if status is-interactive
     # Interactive shell initialisation
 
     set -U fish_greeting
-    fzf --fish | source
-    zoxide init fish | source
 
-  if test -e /nix/var/nix/profiles/default/etc/profile.d/nix.fish
-    source /nix/var/nix/profiles/default/etc/profile.d/nix.fish
-  end
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    fzf --fish | source
+    zoxide init fish | source 
+    starship init fish | source
 end
 
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
