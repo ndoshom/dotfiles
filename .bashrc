@@ -27,3 +27,4 @@ alias poweroff='doas poweroff'
 
 
 eval "$(fzf --bash)" 
+. "$HOME/.cargo/env"

@@ -1,6 +1,5 @@
 if status is-login
     set -gx PYTHON_HISTORY "/home/ns/.local/state/python/history"
-    set -gx FZF_DEFAULTS "--layout=reverse --border=bold --border=rounded --margin=3% --color=dark"
 end
   
 if status is-interactive
@@ -8,7 +7,7 @@ if status is-interactive
     set -gx HYPRSHOT_DIR ~/Screenshots
     set -gx EDITOR nvim
     set -gx PATH $PATH /usr/local/bin ~/bin ~/.local/state/nix/profile/bin ~/.local/state/cargo/bin /home/ns/linuxbrew/.linuxbrew/bin
-    set -gx BROWSER ~/.local/state/nix/profile/bin/brave
+    set -gx BROWSER "flatpak run com.brave.Browser"
 
     # Abbreviations
     abbr --add --position anywhere -- -C --color
