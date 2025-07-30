@@ -1,7 +1,3 @@
--- Set the leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- jk to exit Insert Mode
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true })
 

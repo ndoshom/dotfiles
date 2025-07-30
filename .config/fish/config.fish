@@ -1,6 +1,5 @@
 if status is-login
     set -gx PYTHON_HISTORY "/home/ns/.local/state/python/history"
-    set -gx FZF_DEFAULTS "--layout=reverse --border=bold --border=rounded --margin=3% --color=dark"
 end
   
 if status is-interactive

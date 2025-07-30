@@ -1,7 +1,3 @@
--- Leader key
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- Tabs two spaces
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
