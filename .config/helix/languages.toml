@@ -1,0 +1,17 @@
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "ltex-ls-plus"]
+soft-wrap.enable = true
+soft-wrap.wrap-at-text-width = true
+formatter = { command = "prettier", args = ["--parser", "markdown", "--prose-wrap", "never"] }
+auto-format = true
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+
+[language-server.ltex-ls-plus.config]
+ltex.diagnosticSeverity = "warning"
+ltex.ltex-ls.logLevel = "warning"
+ltex.disabledRules = { "en-US" = ["PROFANITY"], "en-GB" = ["PROFANITY"] }
+ltex.dictionary = { "en-US" = ["builtin"], "en-GB" = ["builtin"] }
