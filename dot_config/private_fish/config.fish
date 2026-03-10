@@ -13,6 +13,7 @@ set -gx TERM xterm-256color
 # Disable greeting
 set fish_greeting ""
 set -Ue fish_key_bindings
+set -x TERM xterm-256color
 
 # ── Prompt ────────────────────────────────────────────────
 # Install Starship first: curl -sS https://starship.rs/install.sh | sh
